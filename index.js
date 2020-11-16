@@ -64,7 +64,7 @@ app.get('/api/transactions/failure', (req, res) => {
 
 app.get('/api/transactions/cancel', (req, res) => {
 	res.status(200).json({
-		message: 'Transaction Canceled!'
+		message: 'Transaction Cancelled!'
 	})
 });
 
