@@ -62,6 +62,12 @@ app.get('/api/transactions/failure', (req, res) => {
 	})
 });
 
+app.get('/api/transactions/cancel', (req, res) => {
+	res.status(200).json({
+		message: 'Transaction Canceled!'
+	})
+});
+
 //404 middleware, should be below routes
 app.use((request, response, next) => response.status(400).json({
 	message: `${request.originalUrl} Not found`
